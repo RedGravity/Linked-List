@@ -19,6 +19,7 @@ int main(){
   list.add(15);
 
   list.print_list();
-  cout << endl << list.get_length() << endl;
+  cout << endl << endl;
 
+  list.bubble_sort();
 }

@@ -19,6 +19,7 @@ public:
   void remove(int val);
   void add(int val);
   void print_list();
+  void swap(Node* a, Node* b);
   void bubble_sort();
 
 private:
