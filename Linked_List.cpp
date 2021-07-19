@@ -74,15 +74,13 @@ void Linked_List::print_list(){
 }
 
 
-// Uses bubble sort to order the nodes in descending order, and prints the list
+// Uses bubble sort to order the nodes in ascending order, and prints the list
 void Linked_List::bubble_sort(){
   for(int i = 0; i < length; i++){
     Node* a = head->next;
     Node* b = head->next->next;
     for(int j = 0; j < length-1; j++){
-      if(a->value > b->value){
-        swap(a, b);
-      }
+      if(a->value > b->value) swap(a, b);
       a = a->next;
       b = b->next;
     }
